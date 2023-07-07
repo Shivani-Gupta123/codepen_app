@@ -26,7 +26,7 @@ const Result = () => {
         }, 1000)
 
         return () => clearTimeout(timeout);
-     }, [html, css, js])
+     },[srcCode])
 
   return (
     <Container style={html || css || js ? null : {background: '#444857' }}>
